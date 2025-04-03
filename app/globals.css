@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* * {
+  font-family: Outfit, Ovo;
+} */
+@theme {
+  --color-light: #ffffff;
+  --color-dark: oklch(0.21 0.034 264.665);
+  --color-lighthover: #2dd4bf;
+  --color-darkhover: #2a004a;
+  --color-darktheme: #11001f;
+  --color-lighttheme: #dwf4ff;
+  
+  --font-outfit: "Outfit", sans-serif;
+  --font-ovo: "Ovo", sans-serif;
+  --font-islandMoments: "Island Moments", cursive
+}
+
+
+.circle-obj {
+  background: radial-gradient(closest-side, #2dd4bf, rgba(233, 168, 2, 0));
+  animation: traverse-up-left 10s ease-in-out infinite alternate;
+  z-index: -1;
+}
+.circle-obj2 {
+  background: radial-gradient(closest-side, #5154ee, rgba(233, 168, 2, 0));
+  animation: traverse-up-right 12s ease-in-out infinite alternate;
+  z-index: -1;
+}
+.circle-obj3 {
+  background: radial-gradient(closest-side, #e8ee43d9, rgba(233, 168, 2, 0));
+  animation: traverse-down-right 8s ease-in-out infinite alternate;
+  z-index: -1;
+}
+@keyframes traverse-up-left {
+  100% {
+    transform: translateY(-200px) translateX(-350px) rotate(180deg);
+  }
+}
+@keyframes traverse-up-right {
+  100% {
+    transform: translateY(-300px) translateX(300px) rotate(1turn);
+  }
+}
+@keyframes traverse-down-right {
+  100% {
+    transform: translateY(250px) translateX(300px) rotate(1turn);
+  }
+}
+/* Añade esto a tu archivo globals.css */
+
+/* Selector para todos los inputs en tu formulario de descargas */
+.font-outfit form input[type="text"]:-webkit-autofill,
+.font-outfit form input[type="text"]:-webkit-autofill:hover,
+.font-outfit form input[type="text"]:-webkit-autofill:focus,
+.font-outfit form input[type="text"]:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(55, 65, 81) inset !important; /* bg-gray-700 en RGB */
+  -webkit-text-fill-color: rgb(229, 231, 235) !important; /* text-light en RGB */
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: rgb(229, 231, 235); /* Color del cursor */
+}
+
+/* Para Firefox */
+.font-outfit form input[type="text"]:-moz-autofill,
+.font-outfit form input[type="text"]:-moz-autofill:focus {
+  background-color: rgb(55, 65, 81) !important; /* bg-gray-700 en RGB */
+  box-shadow: 0 0 0 1000px rgb(55, 65, 81) inset !important;
+  color: rgb(229, 231, 235) !important;
+}
+
+/* Refuerzo adicional para navegadores problemáticos */
+.font-outfit form input[type="text"] {
+  background-color: rgb(55, 65, 81) !important; /* bg-gray-700 */
+}
+
+/* Prevenir cambios de estilo durante la transición de autocompletado */
+.font-outfit form input[type="text"] {
+  transition-property: border-color, box-shadow;
+  transition-duration: 0.3s;
+}
+
+/* Asegurar que el foco mantenga los estilos correctos */
+.font-outfit form input[type="text"]:focus {
+  background-color: rgb(55, 65, 81) !important;
+  border-color: rgb(124, 58, 237) !important; /* ring-purple-600 */
+  box-shadow: 0 0 0 1px rgb(124, 58, 237) !important;
+}
