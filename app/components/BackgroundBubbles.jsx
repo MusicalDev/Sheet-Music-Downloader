@@ -2,6 +2,7 @@ export default function BackgroundBubbles() {
     return (
         <div className="fixed inset-0 z-[-1] overflow-hidden bg-slate-800">
             <div className="relative w-full h-full flex items-center justify-center">
+                
                 {/* Contenedor central para todas las burbujas */}
                 <div className="relative w-[1000px] h-[1000px]">
                     {/* Primera burbuja */}

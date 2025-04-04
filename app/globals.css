@@ -47,9 +47,8 @@
     transform: translateY(250px) translateX(300px) rotate(1turn);
   }
 }
-/* Añade esto a tu archivo globals.css */
 
-/* Selector para todos los inputs en tu formulario de descargas */
+
 .font-outfit form input[type="text"]:-webkit-autofill,
 .font-outfit form input[type="text"]:-webkit-autofill:hover,
 .font-outfit form input[type="text"]:-webkit-autofill:focus,
@@ -68,20 +67,29 @@
   color: rgb(229, 231, 235) !important;
 }
 
-/* Refuerzo adicional para navegadores problemáticos */
+
 .font-outfit form input[type="text"] {
   background-color: rgb(55, 65, 81) !important; /* bg-gray-700 */
 }
 
-/* Prevenir cambios de estilo durante la transición de autocompletado */
+
 .font-outfit form input[type="text"] {
   transition-property: border-color, box-shadow;
   transition-duration: 0.3s;
 }
 
-/* Asegurar que el foco mantenga los estilos correctos */
+
 .font-outfit form input[type="text"]:focus {
   background-color: rgb(55, 65, 81) !important;
   border-color: rgb(124, 58, 237) !important; /* ring-purple-600 */
   box-shadow: 0 0 0 1px rgb(124, 58, 237) !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
 }
