@@ -148,11 +148,11 @@ export default function SheetMusicDownloader() {
                 </div>
             )}
 
-            <section className="font-outfit bg-transparent w-full h-screen flex items-center justify-center overflow-hidden">
+            <section className="font-outfit bg-transparent w-full min-h-screen flex items-center justify-center overflow-hidden sm:mt-0 mt-22">
                 <div
                     className="max-w-lg mx-auto relative overflow-hidden z-10 bg-gray-900 p-8 rounded-3xl shadow-md 
-            before:w-24 before:h-24 before:absolute before:bg-[#2dd4bf]/40 before:rounded-full before:-z-10 before:blur-2xl 
-            after:w-32 after:h-32 after:absolute after:bg-[#5154ee]/40 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12"
+                    before:w-24 before:h-24 before:absolute before:bg-[#2dd4bf]/40 before:rounded-full before:-z-10 before:blur-2xl 
+                    after:w-32 after:h-32 after:absolute after:bg-[#5154ee]/40 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12"
                 >
                     <h1 className="text-2xl font-ovo text-light mb-6">Download Sheet Music</h1>
 
