@@ -10,12 +10,10 @@ export default function Home() {
     <div className=" flex h-full items-center justify-center  flex-col">
 
       <>
-
         <Navbar />
         <SheetMusicDownloader />
         <HowToUse />
         <Contact />
-
       </>
     </div>
   );

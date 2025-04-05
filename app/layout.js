@@ -22,7 +22,7 @@ const islandMoments = Island_Moments({
 });
 
 export const metadata = {
-  title: "Opus",
+  title: "Opus2",
   description: "Sheet Music Downloader",
 };
 
