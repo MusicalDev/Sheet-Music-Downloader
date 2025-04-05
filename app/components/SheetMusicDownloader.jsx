@@ -158,14 +158,14 @@ export default function SheetMusicDownloader() {
 
                     <form onSubmit={handleSubmit} className="font-ovo">
                         <div className="mb-4">
-                            <label className="block text-md font-medium text-gray-300" htmlFor="instrumento">Instrument:</label>
+                            <label className="block text-md font-medium text-gray-300" htmlFor="instrumento">Parts - Score:</label>
                             <input
                                 className="mt-1 p-2 w-full bg-gray-700 border border-gray-600 rounded-xl text-light focus:outline-none focus:ring-1 focus:ring-purple-600"
                                 type="text"
                                 name="instrumento"
                                 id="instrumento"
                                 value={formData.instrumento}
-                                placeholder="e.g.,  Oboe 1"
+                                placeholder="e.g.,  Oboe 1 or Beethoven: Symphony No. 5"
                                 onChange={handleChange}
                             />
                         </div>
