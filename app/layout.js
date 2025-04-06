@@ -22,8 +22,22 @@ const islandMoments = Island_Moments({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://sheet-music-downloader.vercel.app"), // dominio base
   title: "Opus2",
   description: "Sheet Music Downloader",
+  openGraph: {
+    title: "Opus2",
+    description: "Sheet Music Downloader",
+    url: "https://sheet-music-downloader.vercel.app/",
+    siteName: "Opus2",
+    images: [
+      {
+        url: "/assets/logo.png", // usa slashes y empieza desde la raíz pública
+        alt: "logo",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
