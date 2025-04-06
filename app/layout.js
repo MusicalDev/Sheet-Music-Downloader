@@ -32,8 +32,10 @@ export const metadata = {
     siteName: "Opus2",
     images: [
       {
-        url: "/assets/logo.png", // usa slashes y empieza desde la raíz pública
-        alt: "logo",
+        url: "https://sheet-music-downloader.vercel.app/assets/logo.png", // URL absoluta
+        alt: "Opus2 logo",
+        width: 1200,
+        height: 630,
       },
     ],
     type: "website",
