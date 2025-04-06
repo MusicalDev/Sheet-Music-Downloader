@@ -34,8 +34,8 @@ export const metadata = {
       {
         url: "/logo.png", // URL absoluta
         alt: "Opus2 logo",
-        width: 1200,
-        height: 630,
+        width: 500,
+        height: 503,
       },
     ],
     type: "website",
