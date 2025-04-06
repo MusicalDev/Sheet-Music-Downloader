@@ -32,7 +32,7 @@ export const metadata = {
     siteName: "Opus2",
     images: [
       {
-        url: "https://sheet-music-downloader.vercel.app/assets/logo.png", // URL absoluta
+        url: "/logo.png", // URL absoluta
         alt: "Opus2 logo",
         width: 1200,
         height: 630,
